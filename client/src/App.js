@@ -151,13 +151,6 @@ class App extends Component {
           .then(response => response.json())
           .then(result => {
               console.log(result);
-              /*if(result.code == 1) {
-                  alert('Relayer service ERROR: ', result.msg)
-              }
-              else {
-                  console.log(result);
-                  openMessage(result.transaction_id);
-              }*/
 
           })
 
