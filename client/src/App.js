@@ -8,17 +8,6 @@ var sigUtil = require('eth-sig-util');
 class App extends Component {
   state = { web3: null, accounts: null, account: '', contract: null, apiResponse: ''};
 
-  /*callAPI(){
-    fetch("http://localhost:9000/testAPI")
-    .then(res => res.text())
-    .then(res => this.setState({apiResponse: res}));
-  };
-
-  componentWillMount(){
-    this.callAPI();
-    console.log(this.state.apiResponse);
-  };*/
-
   componentDidMount = async () => {
 
     try {
@@ -37,11 +26,8 @@ class App extends Component {
         Receiver.abi,
         "0x89F1152967Be70BCCDc43b68AC481ad327f3CfB9",
       );
-      // Set web3, accounts, and contract to the state, and then proceed with an
-      // example of interacting with the contract's methods.
       this.setState({ web3: web3, accounts: accounts, contract: instance });
     } catch (error) {
-      // Catch any errors for any of the above operations.
       alert(
         `Failed to load web3, accounts, or contract. Check console for details.`,
       );
