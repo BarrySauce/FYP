@@ -1,8 +1,8 @@
 {
   "development": {
     "username": "root",
-    "password": "Ma201103_qq",
-    "database": "RelayerDB",
+    "password": "PASSWORD",
+    "database": "DATABASE NAME",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
